@@ -10,8 +10,6 @@ It is designed for:
 
 The focus is **stable layout**, **human-friendly output**, and **DM-first UX**.
 
----
-
 ## ✨ Features
 
 - No `channel_id` required
@@ -27,8 +25,6 @@ The focus is **stable layout**, **human-friendly output**, and **DM-first UX**.
 - Single Python file
 - No cache, no database
 
----
-
 ## 📦 Requirements
 
 - Python **3.9+**
@@ -38,16 +34,12 @@ Python dependencies:
 - `requests`
 - `wcwidth`
 
----
-
 ## 📥 Installation
 
 ```bash
 pip install -r requirements.txt
 chmod +x silentmost.py
 ````
-
----
 
 ## 🔑 Authentication
 
@@ -62,8 +54,6 @@ The bot must:
   * `create_post`
   * `create_direct_channel`
 
----
-
 ## 🚀 Usage
 
 ### Bot information
@@ -71,8 +61,6 @@ The bot must:
 ```bash
 ./silentmost.py -u https://chat.company.com -t TOKEN me
 ```
-
----
 
 ### List DM chats
 
@@ -95,8 +83,6 @@ Only chats with user replies:
 ./silentmost.py ... chats --unread-only
 ```
 
----
-
 ### Read DM with a user
 
 ```bash
@@ -113,15 +99,11 @@ Boxed output:
 └────────────────────────────────────
 ```
 
----
-
 ### Follow / tail mode
 
 ```bash
 ./silentmost.py ... read --user john.doe --follow
 ```
-
----
 
 ### Read all DM chats
 
@@ -129,15 +111,11 @@ Boxed output:
 ./silentmost.py ... read --all
 ```
 
----
-
 ### Send a Direct Message
 
 ```bash
 ./silentmost.py ... send john.doe "Hello 👋"
 ```
-
----
 
 ### JSON output (for scripts)
 
@@ -145,36 +123,6 @@ Boxed output:
 ./silentmost.py ... chats --json | jq
 ./silentmost.py ... read --user john.doe --json
 ```
-
----
-
-## 🧠 Design Notes
-
-* All column widths are calculated using **visual width**, not string length
-* Emoji, Unicode, and Cyrillic text do **not** break alignment
-* Each message is rendered as a **single visual block**
-* No caching is used — output always reflects current state
-
----
-
-## 🛡 License
-
-MIT License
-See [`LICENSE`](LICENSE)
-
----
-
-## 🙌 Contributing
-
-This project is intentionally kept simple:
-
-* single file
-* minimal dependencies
-* predictable CLI behavior
-
-Ideas, improvements, and PRs are welcome.
-
----
 
 ## ⭐ Why “silentmost”?
 
