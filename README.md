@@ -5,7 +5,7 @@
 It is designed for:
 - bot operators
 - SRE / DevOps engineers
-- automation scripts
+- Red Team / Pentesters
 - anyone who wants a clean, readable DM workflow without `channel_id`
 
 The focus is **stable layout**, **human-friendly output**, and **DM-first UX**.
